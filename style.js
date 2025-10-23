@@ -46,10 +46,24 @@ export default StyleSheet.create({
         rowGap: "2.5%",
     },
     local: {
-        backgroundColor: "#0f0",
+        backgroundColor: "#023E8A",
         width: "45%",
         marginHorizontal: "2.5%",
-        height: 100,
+        height: 150,
         borderRadius: 10,
+        alignItems: "center",
+        justifyContent: "center",
+    },
+    localImage: {
+        flex: 2,
+        height: "100%",
+        width: "100%",
+        borderRadius: 10,
+    },
+    localText: {
+        flex: 1,
+        fontSize: 10,
+        color: "#CAF0F8",
+        margin: "1%",
     },
 });
