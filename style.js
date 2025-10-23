@@ -35,11 +35,9 @@ export default StyleSheet.create({
     locais: {
         flex: 1,
         backgroundColor: "#0077B6",
-        alignItems: "flex-end",
-        justifyContent: "flex-start",
+        alignItems: "center",
+        justifyContent: "center",
         padding: "2.5%",
-        margin: "2.5%",
-        borderRadius: 10,
         flexDirection: "column",
         flexWrap: "wrap",
         alignContent: "space-evenly",

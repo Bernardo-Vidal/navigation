@@ -52,9 +52,22 @@ export default function App() {
                         ),
                     }}
                 />
-                {/*<tabs.Screen name='Cardápio' component={Cardapio} options={{tabBarIcon: ({focused}) => <FontAwesome6 name='bowl-food' size={20} iconStyle='solid' color={focused ? "#023E8A" : "#ADE8F4"} />}} />
-        <tabs.Screen name='Favoritos' component={Favoritos} options={{tabBarIcon: ({focused}) => <FontAwesome6 name='star' size={20} iconStyle='solid' color={focused ? "#023E8A" : "#ADE8F4"} />}} />
-        */}
+                <tabs.Screen
+                    name="Cardápio"
+                    component={Cardapio}
+                    options={{
+                        tabBarIcon: ({ focused }) => (
+                            <FontAwesome6
+                                name="bowl-food"
+                                size={20}
+                                iconStyle="solid"
+                                color={focused ? "#023E8A" : "#ADE8F4"}
+                            />
+                        ),
+                    }}
+                />
+                {/*<tabs.Screen name='Favoritos' component={Favoritos} options={{tabBarIcon: ({focused}) => <FontAwesome6 name='star' size={20} iconStyle='solid' color={focused ? "#023E8A" : "#ADE8F4"} />}} />
+                 */}
                 <tabs.Screen
                     name="Sobre"
                     component={Sobre}
