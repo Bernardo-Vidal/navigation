@@ -64,11 +64,11 @@ export default function App() {
                     }}
                 />
                 <Marker
-                    title="Lancheria da Rose!!"
-                    description="Tv. Carolino Corrêa, 400 - Passo do Príncipe, 96425-400"
+                    title="Avenida Lanches"
+                    description="Av. Pa Abílio Sponchiado, 1413 - Estrela D''alva, 96415-200"
                     coordinate={{
-                        latitude: -31.34340889758116,
-                        longitude: -54.12662626561726,
+                        latitude: -31.33141236794324,
+                        longitude: -54.085683713491086,
                     }}
                 />
                 <Marker
@@ -85,6 +85,14 @@ export default function App() {
                     coordinate={{
                         latitude: -31.324686774506286,
                         longitude: -54.12286044418443,
+                    }}
+                />
+                <Marker
+                    title="LANCHERIA Encanto"
+                    description="R. Dr. Júlio Miranda, 700 - Passo do Príncipe, 96425-200"
+                    coordinate={{
+                        latitude: -31.346320873336285,
+                        longitude: -54.12270013912312,
                     }}
                 />
             </MapView>

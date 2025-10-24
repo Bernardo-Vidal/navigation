@@ -11,16 +11,12 @@ export default function Sobre() {
             </Text>
             <Text style={style.sobreSubTitle}>Locais:</Text>
             <Text style={style.sobreText}>
-                Lista de locais, com horário de atendimento, endereço e número
-                para contato
+                Locais, com horário de atendimento, endereço e número para
+                contato
             </Text>
             <Text style={style.sobreSubTitle}>Cardápio:</Text>
             <Text style={style.sobreText}>
-                Compare os preços de itens disponíveis em diversas lancherias
-            </Text>
-            <Text style={style.sobreSubTitle}>Favoritos:</Text>
-            <Text style={style.sobreText}>
-                Gerencie seus locais e itens favoritos
+                Lista de itens disponíveis em diversas lancherias
             </Text>
         </View>
     );

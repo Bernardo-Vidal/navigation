@@ -2,7 +2,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { FontAwesome6 } from "@react-native-vector-icons/fontawesome6";
 
-import Favoritos from "./screens/Favoritos.js";
+import Login from "./screens/Login.js";
 import Locais from "./screens/Locais.js";
 import Mapa from "./screens/Mapa.js";
 import Cardapio from "./screens/Cardapio.js";
@@ -14,6 +14,7 @@ export default function App() {
     return (
         <NavigationContainer>
             <tabs.Navigator
+                initialRouteName="Login"
                 screenOptions={{
                     tabBarActiveTintColor: "#03045E",
                     tabBarActiveBackgroundColor: "#CAF0F8",
@@ -66,8 +67,15 @@ export default function App() {
                         ),
                     }}
                 />
-                {/*<tabs.Screen name='Favoritos' component={Favoritos} options={{tabBarIcon: ({focused}) => <FontAwesome6 name='star' size={20} iconStyle='solid' color={focused ? "#023E8A" : "#ADE8F4"} />}} />
-                 */}
+                <tabs.Screen
+                    name="Login"
+                    component={Login}
+                    options={{
+                        tabBarShowLabel: false,
+                        tabBarStyle: { display: "none" },
+                        tabBarItemStyle: { display: "none" },
+                    }}
+                />
                 <tabs.Screen
                     name="Sobre"
                     component={Sobre}
