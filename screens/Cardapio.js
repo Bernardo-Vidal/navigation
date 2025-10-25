@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Text, View, TouchableHighlight, Alert, FlatList } from "react-native";
+import style from "../style.js";
 
 export default function Cardapio() {
     const cardapio = [
@@ -17,16 +18,16 @@ export default function Cardapio() {
     ];
     const CardapioItem = ({ nome, preco }) => (
         <TouchableHighlight
-            //        style={styles.itemContainer}
+            style={style.cardapio}
             onPress={() => Alert.alert(nome, preco)}
         >
             <View>
-                <Text>{nome}</Text>
+                <Text style={style.cardapioText}>{nome}</Text>
             </View>
         </TouchableHighlight>
     );
     return (
-        <View>
+        <View style={style.cardapioContainer}>
             <FlatList
                 data={cardapio}
                 renderItem={({ item }) => <CardapioItem {...item} />}
